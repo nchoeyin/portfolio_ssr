@@ -8,4 +8,21 @@
   </div> -->
 </div>
 
-<app-http-cache></app-http-cache>
+<!-- <app-http-cache></app-http-cache> -->
+
+<ul>
+  <li><a [routerLink]="['/']" routerLinkActive="router-link-active">Home Page</a></li>
+  <li>
+    <a [routerLink]="['/http-cache']" routerLinkActive="router-link-active">HTTP Cache Example</a>
+  </li>
+  <li>
+    <a [routerLink]="['/products', 1]" routerLinkActive="router-link-active">Product 1</a>
+  </li>
+  <li>
+    <a [routerLink]="['/products', 3]" routerLinkActive="router-link-active">
+      Products 3
+    </a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>

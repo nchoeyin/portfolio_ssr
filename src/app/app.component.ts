@@ -1,10 +1,10 @@
 import { afterNextRender, Component, ElementRef, ViewChild } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 import { HttpCacheComponent } from "./http-cache/http-cache.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HttpCacheComponent],
+  imports: [RouterModule, RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
